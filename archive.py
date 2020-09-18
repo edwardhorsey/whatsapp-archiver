@@ -29,7 +29,7 @@ def format_nodes(arr):
     return  [*trim[1:], trim[0]]
 
 chat_names = format_nodes([chat.get_attribute('title') for chat in how_many_chats])
-print(f'{len(chat_names)} unarchived chats: , {chat_names}')
+print(f'{len(chat_names)} unarchived chats: {chat_names}')
 
 def archive(user_name):
     try:
